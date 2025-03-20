@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomePageComponent } from "./shared/pages/home-page/home-page.component";
 import { SidebarComponent } from './shared/pages/sidebar/sidebar.component';
 
 @Component({
@@ -11,5 +10,5 @@ import { SidebarComponent } from './shared/pages/sidebar/sidebar.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Portafolio';
+  title = 'Portafolio CarlosGDev';
 }
