@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 import { BASE_PATH } from '../../../app.routes';
 
 @Component({
-  selector: 'app-sidebar',
+  selector: 'app-header',
   standalone: true,
   imports: [],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.scss'
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
-export class SidebarComponent {
+export class HeaderComponent {
 
   constructor(private router: Router) {}
 
