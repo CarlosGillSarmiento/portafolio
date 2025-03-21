@@ -1,0 +1,23 @@
+.sidebar {
+  position: fixed;
+  height: 61px;
+  width: 100vw;
+}
+
+.content {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  height: 100vh;
+  margin: 10px 0 0 10px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    height: 84px;
+    width: 100vw;
+  }
+  .content {
+    top: 84px;
+  }
+}
