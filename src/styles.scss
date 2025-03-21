@@ -34,6 +34,11 @@ body {
 }
 
 .button--primary:hover {
-  background-color: rgb(34, 185, 85); /* Un tono más oscuro para resaltar el hover */
-  transform: scale(1.03); /* Ligero aumento de tamaño */
+  background-color: rgb(34, 185, 85);
+  transform: scale(1.03);
+}
+
+.button--secondary:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+  transform: scale(1.03);
 }

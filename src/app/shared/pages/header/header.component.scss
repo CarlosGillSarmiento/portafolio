@@ -22,7 +22,7 @@ header {
   display: inline;
   color: #fff;
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -30,7 +30,7 @@ header {
 
 .header__button-menu{
   position: absolute;
-  right: 10px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
@@ -58,6 +58,8 @@ header {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
 }
 
 .menu__button{
@@ -137,7 +139,7 @@ header {
     font-size: 16px;
   }
   .button--green:hover {
-    background-color: rgb(34, 185, 85); /* Un tono más oscuro para resaltar el hover */
-    transform: scale(1.03); /* Ligero aumento de tamaño */
+    background-color: rgb(34, 185, 85);
+    transform: scale(1.03);
   }
 }
