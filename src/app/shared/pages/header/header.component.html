@@ -1,14 +1,25 @@
-<aside>
+<header>
   <div class="header">
-    <h1 class="header__title">CarlosG Dev</h1>
-    <button class="header__button-menu" (click)="openMenu()">Menu</button>
+    <h1 class="header__title">
+      <a (click)="navigate('/home')">CarlosG Dev</a>
+    </h1>
+    <div class="menu" *ngIf="showMenu">
+      <div class="menu__list">
+        <div class="menu__group">
+
+          <button class="menu__button" (click)="navigate('/home')">Inicio</button>
+          <button class="menu__button" (click)="navigate('/about-me')">Acerca de mí</button>
+          <button class="menu__button" (click)="navigate('/projects')">Proyectos</button>
+        </div>
+        <div>
+          <button class="menu__button button--green" (click)="navigate('/contact-me')">Contáctame</button>
+        </div>
+      </div>
+    </div>
+    <button class="header__button-menu" (click)="openMenu()">
+      <img *ngIf="!showMenu" src="../../../../assets/menu.svg" alt="Menu">
+      <img *ngIf="showMenu" src="../../../../assets/close.svg" alt="Close">
+    </button>
   </div>
-  <div class="menu" *ngIf="showMenu">
-    <ul class="menu__list">
-      <li class="menu__item"><a (click)="navigate('/home')">Inicio</a></li>
-      <li class="menu__item"><a (click)="navigate('/about-me')">Acerca de mí</a></li>
-      <li class="menu__item"><a (click)="navigate('/projects')">Proyectos</a></li>
-      <li class="menu__item"><a (click)="navigate('/contact-me')">Contacto</a></li>
-    </ul>
-  </div>
-</aside>
+  
+</header>
