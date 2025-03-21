@@ -1,0 +1,115 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.hero--content {
+  padding: 72px 0 128px 0;
+  max-width: 600px;
+}
+
+.hero__title {
+  font-size: 34px;
+  line-height: 1.5;
+}
+
+.hero__name {
+  font-weight: bold;
+  color: #47d16e;
+  font-size: 34px;
+}
+
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.button--w {
+  width: 169px;
+}
+
+.button--w img {
+  margin-right: 10px;
+}
+
+.button--about img {
+  margin-left: 10px;
+}
+
+.button--about {
+  width: 180px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(31, 31, 33, 1);
+  border: 2px solid rgba(38, 41, 45, 1);
+  border-radius: 8px;
+  margin: 0 15px;
+  padding: 16px;
+}
+
+.card__image {
+  height: 365px;
+  width: 294px;
+}
+
+.card__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.card__description {
+  text-align: justify;
+}
+
+.card__button {
+  width: 100%;
+}
+
+.card--skills {
+  margin-top: 16px;
+  padding: 24px;
+  align-items: start;
+}
+
+.card__icon {
+  width: 50px;
+  height: 50px;
+}
+
+.card--skills__title {
+  margin: 30px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 10px;
+}
+
+.skills__title {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #47d16e;
+}
+
+.skills__item-title {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.skills__description {
+  text-align: justify;
+}
+
+
