@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { BASE_PATH } from '../../../app.routes';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,11 +10,10 @@ import { Router } from '@angular/router';
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
-  
+
   constructor(private router: Router) {}
 
-
   navigate(path: string) {
-    this.router.navigate([path]);
+    this.router.navigate([`/${BASE_PATH}/${path}`]);
   }
 }
