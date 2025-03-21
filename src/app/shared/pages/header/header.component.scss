@@ -136,4 +136,8 @@ header {
     cursor: pointer;
     font-size: 16px;
   }
+  .button--green:hover {
+    background-color: rgb(34, 185, 85); /* Un tono más oscuro para resaltar el hover */
+    transform: scale(1.03); /* Ligero aumento de tamaño */
+  }
 }

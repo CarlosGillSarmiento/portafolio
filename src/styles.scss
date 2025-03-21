@@ -10,3 +10,30 @@ body {
   background-color: rgba(23, 23, 24);
   color: #fff;
 }
+
+.button--primary {
+  height: 48px;
+  background-color: rgb(71, 209, 110, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button--secondary {
+  height: 48px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button--primary:hover {
+  background-color: rgb(34, 185, 85); /* Un tono más oscuro para resaltar el hover */
+  transform: scale(1.03); /* Ligero aumento de tamaño */
+}
