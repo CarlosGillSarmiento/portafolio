@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+## Figma
+
+https://www.figma.com/design/epm3MvjKeLQ0AI3OaxHgkA/Portafolio-Personal---Free-Template-(Community)?node-id=19-78&t=dkq0GYlVRS1y7985-0
+
+## Repositorio
+
+https://github.com/CarlosGillSarmiento/portafolio
