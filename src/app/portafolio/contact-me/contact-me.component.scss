@@ -1,0 +1,89 @@
+
+.contactme{
+  margin: auto;
+  max-width: 348px;
+  text-align: center;
+  color: #47d16e;
+}
+
+.contactme--title{
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  padding: 16px 0;
+}
+
+.contactme--parrafo{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #fff;
+  padding: 16px 0;
+}
+
+form{
+  max-width: 300px;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 24px ;
+  background-color: rgba(31, 31, 33, 1);
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.form_input, select{
+  background-color: rgba(31, 31, 33, 1);
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border: 2px solid #444;
+  color: rgba(160, 160, 161, 1);
+  font-size: 16px;
+}
+
+.form_input:focus , select:focus{
+  outline: 1px solid #777;
+  border: 2px solid #777;
+}
+
+textarea{
+  min-width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+  resize: vertical;
+  font-family: "system-ui";
+}
+
+textarea:focus{
+  outline: none;
+  border: 2px solid #444;
+}
+
+.form_input-submit{
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+}
+
+.form_link_terms{
+  color: rgb(74, 125, 227);
+  text-decoration: none;
+}
+
+.button--w {
+  width: 286px;
+}
