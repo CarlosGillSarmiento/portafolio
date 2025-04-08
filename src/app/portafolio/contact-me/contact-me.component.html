@@ -1,1 +1,29 @@
-<p>contact-me works!</p>
+<ng-container *ngIf="contactme$ | async as contactme"></ng-container>
+
+<div class="contactme">
+  <h2 class="contactme--title">¡Hablemos!</h2>
+  <p class="contactme--parrafo">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme!</p>
+</div>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nombre</label>
+    <input class="form_input" type="text" placeholder="Nombre" id="name" formControlName="name">
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input class="form_input" type="email" placeholder="email@example.com" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="message">Mensaje</label>
+    <textarea 
+      class="form_input" 
+      name="message" 
+      id="message" 
+      placeholder="Escribe tu mensaje..." 
+      formControlName="message"
+    ></textarea>
+  </div>
+  <div class="form_input-submit">
+    <button type="submit" class="button--primary button--w">Enviar Formulario</button>
+  </div>
+</form>
