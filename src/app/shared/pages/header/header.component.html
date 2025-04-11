@@ -6,13 +6,20 @@
     <div class="menu" *ngIf="showMenu">
       <div class="menu__list">
         <div class="menu__group">
-
-          <button class="menu__button" (click)="navigate('/home')">Inicio</button>
-          <button class="menu__button" (click)="navigate('/about-me')">Acerca de mí</button>
-          <button class="menu__button" (click)="navigate('/projects')">Proyectos</button>
+          <button class="menu__button" (click)="navigate(this.routes[0].path ?? '')">
+            Inicio
+          </button>
+          <button class="menu__button" (click)="navigate(this.routes[2].path ?? '')">
+            Acerca de mí
+          </button>
+          <button class="menu__button" (click)="navigate(this.routes[1].path ?? '')">
+            Proyectos
+          </button>
         </div>
         <div>
-          <button class="menu__button button--green" (click)="navigate('/contact-me')">Contáctame</button>
+          <button class="menu__button button--green" (click)="navigate(this.routes[3].path ?? '')">
+            Contáctame
+          </button>
         </div>
       </div>
     </div>

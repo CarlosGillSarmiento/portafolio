@@ -1,7 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { BASE_PATH } from '../../../app.routes';
 import { CommonModule } from '@angular/common';
+import { environment } from '../../../../environments/environments';
+import { routes } from '../../../portafolio/app.routing';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,8 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
   showMenu = false;
+  baseUrl = environment.mfeBaseRoute;
+  routes = routes;
 
   constructor(private router: Router) {}
   ngOnInit(): void {
@@ -19,7 +22,7 @@ export class HeaderComponent implements OnInit {
   }
 
   navigate(path: string) {
-    this.router.navigate([`/${BASE_PATH}/${path}`]);
+    this.router.navigate([`/${this.baseUrl}/${path}`]);
     this.showMenu = false;
     this.checkScreenSize();
   }

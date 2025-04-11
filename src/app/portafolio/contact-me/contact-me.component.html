@@ -4,7 +4,7 @@
   <h2 class="contactme--title">¡Hablemos!</h2>
   <p class="contactme--parrafo">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme!</p>
 </div>
-<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div>
     <label for="name">Nombre</label>
     <input class="form_input" type="text" placeholder="Nombre" id="name" formControlName="name">
@@ -24,6 +24,8 @@
     ></textarea>
   </div>
   <div class="form_input-submit">
-    <button type="submit" class="button--primary button--w">Enviar Formulario</button>
+    <button type="submit" class="button--primary button--w">
+      Enviar Formulario
+    </button>
   </div>
 </form>

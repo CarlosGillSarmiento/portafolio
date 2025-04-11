@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4300/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -31,6 +31,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 https://www.figma.com/design/epm3MvjKeLQ0AI3OaxHgkA/Portafolio-Personal---Free-Template-(Community)?node-id=19-78&t=dkq0GYlVRS1y7985-0
 
-## Repositorio
+## Repositorio Front
 
 https://github.com/CarlosGillSarmiento/portafolio
+
+## Repositorio Back
+
+https://github.com/CarlosGillSarmiento/portafolio-back

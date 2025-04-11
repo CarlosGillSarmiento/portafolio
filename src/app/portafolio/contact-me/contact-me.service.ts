@@ -13,7 +13,7 @@ export class ContactMeService {
 
   constructor(private http: HttpClient) { }
 
-  addUser(value: any): Observable<ContactMeResponse> {
+  sendForm(value: any): Observable<ContactMeResponse> {
     return this.http.post<ContactMeResponse>(`${this.apiUrl}/contact`, value);
   }
 }

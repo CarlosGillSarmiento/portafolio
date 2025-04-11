@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { BASE_PATH } from '../../app.routes';
+import { environment } from '../../../environments/environments';
+
 
 @Component({
   selector: 'app-home',
@@ -10,9 +11,11 @@ import { BASE_PATH } from '../../app.routes';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  baseUrl = environment.mfeBaseRoute;
+
   constructor(private router: Router) {}
 
   navigate(path: string) {
-    this.router.navigate([`/${BASE_PATH}/${path}`]);
+    this.router.navigate([`/${this.baseUrl}/${path}`]);
   }
 }
